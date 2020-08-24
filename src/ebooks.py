@@ -1,4 +1,5 @@
 import random
+import datetime
 import re
 import sys
 import twitter
@@ -17,11 +18,8 @@ from auth import *
 
 
 def connect():
-    # Use Twitter
     return twitter.Api(consumer_key=CONSUMER_KEY, consumer_secret=CONSUMER_SECRET, access_token_key=ACCESS_TOKEN, access_token_secret=ACCESS_TOKEN_SECRET, tweet_mode='extended')
-    # Use Twython
     #twitter = Twython(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SEC$
-    #return None
 
 
 def entity(text):
@@ -116,6 +114,8 @@ def grab_tweets(api, max_id=None):
 if __name__ == "__main__":
     order = ORDER
     guess = 0
+    x = datetime.datetime.now()
+    print(x)
     if ODDS and not DEBUG:
         guess = random.randint(0, ODDS - 1)
 
