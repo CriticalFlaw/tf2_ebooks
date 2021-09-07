@@ -5,15 +5,14 @@ ACCESS_TOKEN        = 'NULL'
 ACCESS_TOKEN_SECRET = 'NULL'
 
 # Setup
-TWITTER_ACCOUNT = "NULL"       # Name of the account you're tweeting to.
+TWITTER_ACCOUNT = "NULL"   # Name of the account you're tweeting to.
 DEBUG = False	# Setting this to False will start tweeting live.
-ODDS = 6	# How often should the bot run? (8 = 1/8 times)
-ORDER = 2	# How sensical should the bot be? (2 = low and 4 = high)
+ODDS = 4	    # How often should the bot run? (8 = 1/8 times)
+ORDER = 2	    # How sensical should the bot be? (2 = low and 4 = high)
 
 # Sources
-SOURCE_TWITTER = [""]		# List of Twitter accounts from which to generate tweets.
-SOURCE_URL = ['']	        # List of websites from which to generate tweets.
-SOURCE_TEXT = "sample_text.txt"			# Name of a text file from which to generate tweets.
+SOURCE_TWITTER = ["TF2Quotes","KritzKast","MercsTF2"]	# List of Twitter accounts from which to generate tweets.
+SOURCE_URL = ['https://www.teamfortress.com']	        # List of websites from which to generate tweets.
 
 # Settings
 SOURCE_EXCLUDE = r'^$'          # Text that matches this regexp will not be processed.
